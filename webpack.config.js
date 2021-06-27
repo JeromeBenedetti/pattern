@@ -63,7 +63,7 @@ Encore
 
     // enables Vue.js support
     .enableVueLoader()
-    
+
     // enables Sass/SCSS support
     //.enableSassLoader()
 
@@ -79,6 +79,19 @@ Encore
 
     // uncomment if you're having problems with a jQuery plugin
     //.autoProvidejQuery()
+
+    // enable ESLint
+    .addLoader({
+        enforce: 'pre',
+        test: /\.(js|vue)$/,
+        loader: 'eslint-loader',
+        exclude: /node_modules/,
+        options: {
+            fix: true,
+            emitError: true,
+            emitWarning: true,
+        },
+    })
     ;
 
 module.exports = Encore.getWebpackConfig();
