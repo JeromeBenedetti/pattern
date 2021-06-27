@@ -1,4 +1,6 @@
 {
+    "name": "jeben/pattern",
+    "description": "Un projet de blog pour s'entrainer sur ma stack technique",
     "type": "project",
     "license": "proprietary",
     "minimum-stability": "stable",
