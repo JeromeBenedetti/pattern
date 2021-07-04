@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class IndexController extends AbstractController
 {
-    #[Route('/', name: 'index')]
+    #[Route('/{vueRouting}', name: 'index')]
     public function index(): Response
     {
         return $this->render('base.html.twig', [
