@@ -7,7 +7,6 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use DateTime;
 use Exception;
-use phpDocumentor\Reflection\Types\Void_;
 
 /**
  * @ORM\Entity
@@ -33,14 +32,14 @@ class Post
     private $message;
 
     /**
-     * @ORM\Column(name="created", type"datetime")
+     * @ORM\Column(name="created", type="datetime")
      * 
      * @var DateTime
      */
     private $created;
 
     /**
-     * @ORM\Column(name="updated", type"datetime")
+     * @ORM\Column(name="updated", type="datetime")
      * 
      * @var DateTime
      */
