@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class IndexController extends AbstractController
 {
-    #[Route('/{vueRouting}', name: 'index', requirements: ['vueRouting' => '.*'])]
+    #[Route('/{vueRouting}', name: 'index', requirements: ['vueRouting' => '^(?!api|_(profiler|wdt)).*'])]
     public function index(): Response
     {
         return $this->render('base.html.twig', [
